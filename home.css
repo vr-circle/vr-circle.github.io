@@ -649,6 +649,16 @@ footer{
         position:relative;
         top:0px;
     }
+    .logoback{
+        height:320px;
+    }
+    .buttonback{
+        margin-top:0;
+    }
+    .about{
+        margin-bottom:0;
+        height:400px;
+    }
 }
 
 
