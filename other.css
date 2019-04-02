@@ -231,8 +231,8 @@ h2,h2 p{
 .page dd,.page dt{
     display:block;
     position:relative;
-    margin:0 0 -10px 10%;
-    line-height:initial;
+    margin-left:10%;
+    line-height:1em;
     font-size:20px;
 }
 .page dt{
@@ -256,7 +256,7 @@ h2,h2 p{
     position:relative;
     width:calc(100% / 3 - 2%);
     margin:0 1% 1px;
-    height:250px;
+    height:275px;
     overflow:hidden;
     /*visibility:hidden;*/
 }
@@ -277,7 +277,6 @@ h2,h2 p{
     height:70%;
 }
 .newse{
-    height:90px;
     overflow:hidden;
 }
 .pagenav{
