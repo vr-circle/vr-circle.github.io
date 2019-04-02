@@ -172,9 +172,9 @@ nav li span{
 .contentse{
     overflow:hidden;
     line-height:45px;
-    margin-left:10%;
-    margin-right:10%;
-    width:80%;
+    margin-left:5%;
+    margin-right:5%;
+    width:90%;
     animation-name:fadein;
     animation-duration:1s;
     z-index:2;
@@ -725,6 +725,13 @@ footer{
         width:90%;
         height:400px;
         margin:0 5% 0;
+    }
+    .styly img,.skefab img,.booth img{
+        width:100%;
+    }
+    .skefab ul,.styly ul,.booth ul{
+        margin:0;
+        padding:0;
     }
 }
 
