@@ -661,6 +661,14 @@ footer{
         margin-bottom:0;
         height:400px;
     }
+    .twittericon{
+        top:40px;
+        left:20px;
+    }
+    .youtubeicon{
+        top:25px;
+        left:20px;
+    }
 }
 
 
