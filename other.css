@@ -491,6 +491,10 @@ img:hover{
 .manuf li{
     list-style:none;
 }
+.skefab iframe{
+        width:100%;
+        height:initial;
+    }
 
 
 /*footer*/
