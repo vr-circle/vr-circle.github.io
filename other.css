@@ -568,6 +568,7 @@ footer{
         height:100%;
         left:-120%;
         list-style:none;
+	top:50px;
         z-index:20;
         margin:0;
     }
