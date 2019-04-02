@@ -172,8 +172,7 @@ nav li span{
 .contentse{
     overflow:hidden;
     line-height:45px;
-    margin-left:5%;
-    margin-right:5%;
+    margin:0 5% 0;
     width:90%;
     animation-name:fadein;
     animation-duration:1s;
