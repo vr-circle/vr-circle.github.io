@@ -56,4 +56,6 @@ function init() {
     }
 
 window.onload = init();
-
+if(window.innerWidth>480 && window.innerWidth<1220){
+    alert("お使いのwindowサイズでは正常に表示できない可能性があります");
+}
