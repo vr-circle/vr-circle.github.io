@@ -338,7 +338,7 @@ nav li span{
     color:white;
     position:relative;
     transform:rotateZ(270deg);
-    bottom:20px;
+    bottom:13px;
 }
 /*button*/
 .buttonback{
@@ -644,6 +644,10 @@ footer{
         padding:10px;
         border-radius:10px;
         background-color:rgba(0, 0, 0, 0.904);
+    }
+　　.mark{
+        position:relative;
+        top:0px;
     }
 }
 
