@@ -510,6 +510,7 @@ footer{
         left:-120%;
         list-style:none;
         visibility:visible;
+        top:50px;
         z-index:20;
         margin:0;
     }
