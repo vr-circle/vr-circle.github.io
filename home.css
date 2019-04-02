@@ -503,7 +503,6 @@ footer{
     .headopen{
         transition-duration:0.7s;
         position:fixed;
-	position:absolute;
         font-size:25px;
         background-color:rgba(0, 0, 0, 0.856);
         width:100%;
