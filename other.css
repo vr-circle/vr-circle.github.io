@@ -739,6 +739,14 @@ footer{
         margin-top:0.8em;
         line-height:1em;
     }
+    .twittericon{
+        top:40px;
+        left:20px;
+    }
+    .youtubeicon{
+        top:25px;
+        left:20px;
+    }
 }
 
 
