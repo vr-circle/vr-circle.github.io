@@ -645,6 +645,10 @@ footer{
         border-radius:10px;
         background-color:rgba(0, 0, 0, 0.904);
     }
+　　.mark{
+        position:relative;
+        top:0px;
+    }
 }
 
 
