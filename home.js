@@ -3,21 +3,35 @@ function init() {
     var a1=850;
     var a2=1600;
     window.addEventListener('scroll', function(e){
-        if ( $(window).scrollTop() > px_change ) {
+        if ( $(window).scrollTop() > px_change )
+        {
             $("header").addClass("headerscroll");
             $("nav").addClass("navscroll");
+
             $(".topscroll").addClass("topscrollscroll");
-            //$(".headlogo").addClass("inv1");
+            
             $(".headsvg").addClass("headsvgscroll");
-            $(".list").addClass("changecolor");
+            
+            $(".list").addClass("changecolor");//scrollした時navの白文字を黒文字に
+
             $(".newscontents").fadeIn();
-        }else if ( $("header").hasClass("headerscroll") ) {
+
+            $(".n_2_list").addClass("liopen");
+
+        }
+        else if ( $("header").hasClass("headerscroll") ) 
+        {
             $("header").removeClass("headerscroll");
+
             $("nav").removeClass("navscroll");
+
             $(".topscroll").removeClass("topscrollscroll");
-            //$(".headlogo").removeClass("inv1");
+            
             $(".headsvg").removeClass("headsvgscroll");
+            
             $(".list").removeClass("changecolor");
+
+            $(".n_2_list").removeClass("liopen");
         }
         if($(window).scrollTop()>a1){
             $(".contactcontents").fadeIn();
@@ -26,33 +40,79 @@ function init() {
             $(".moviecontents").fadeIn();
         }
         
-    });
+    },false);
+
+
+    
     var hum=document.getElementById('humbergerback');
-    hum.addEventListener('click',function(){
-        if( $(".headopen").hasClass("is-open") ){
-            $(".headopen").removeClass("is-open");
+    hum.addEventListener('click',function(ev){
+        if( $(".sidenav").hasClass("is-open") )
+        {
+            $(".sidenav").removeClass("is-open");
+            $(".sideul").removeClass("is-open");
             $(".hum1").removeClass("hum1r");
             $(".hum2").removeClass("hum2r");
             $(".hum3").removeClass("hum3r");
-            $(".backlist").removeClass("backlist-isopen");
+            $("body").removeClass("notscr");
+            $("html").removeClass("notscr");
         }
         else{
-            $(".headopen").addClass("is-open");
+            $(".sidenav").addClass("is-open");
+            $(".sideul").addClass("is-open");
             $(".hum1").addClass("hum1r");
             $(".hum2").addClass("hum2r");
             $(".hum3").addClass("hum3r");
-            $(".backlist").addClass("backlist-isopen");
+            $("body").addClass("notscr");
+            $("html").addClass("notscr");
         }
+    },false);
+    var touchStartX;
+    var touchStartY;
+    var touchMoveX;
+    var touchMoveY;
+ 
+    // 開始時
+    window.addEventListener("touchstart", function(event) {
+    // 座標の取得
+    touchStartX = event.touches[0].pageX;
+    }, {passive:false});
+    // 終了時
+    window.addEventListener("touchend", function(event) {
+        touchMoveX = event.changedTouches[0].pageX;
+    // 移動量の判定
+    if (touchStartX > touchMoveX) {
+        if ((touchStartX > (touchMoveX + 50)) && ($(".sidenav").hasClass("is-open"))) {
+        //右から左に指が移動した場合
+        $(".sidenav").removeClass("is-open");
+        $(".sideul").removeClass("is-open");
+        $(".hum1").removeClass("hum1r");
+        $(".hum2").removeClass("hum2r");
+        $(".hum3").removeClass("hum3r");
+        $("body").removeClass("notscr");
+        $("html").removeClass("notscr");
+        }
+    } else if (touchStartX < touchMoveX) {
+        if ((touchStartX + 50) < touchMoveX) {
+        //左から右に指が移動した場合
+        $(".sidenav").addClass("is-open");
+        $(".sideul").addClass("is-open");
+        $(".hum1").addClass("hum1r");
+        $(".hum2").addClass("hum2r");
+        $(".hum3").addClass("hum3r");
+        $("body").addClass("notscr");
+        $("html").addClass("notscr");
+        }
+    }
+    }, false);
+
+    
+    var aa=document.getElementById('controlscroll');
+    aa.addEventListener('click',function(){
+        window.scrollTo(0,0);
     },false);
 }
 
 
-    var aa=document.getElementById('controlscroll');
-    aa.addEventListener('click',function(){
-        scrolltarget(0);
-    },false);
-    function scrolltarget(x){
-        window.scrollTo(x,x);
-    }
 
 window.onload = init();
+
