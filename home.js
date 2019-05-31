@@ -81,8 +81,7 @@ function init() {
         touchMoveX = event.changedTouches[0].pageX;
     // 移動量の判定
     if (touchStartX > touchMoveX) {
-        if ((touchStartX > (touchMoveX + 50)) && ($(".sidenav").hasClass("is-open"))) {
-        //右から左に指が移動した場合
+        if ((touchStartX > (touchMoveX + 70)) && ($(".sidenav").hasClass("is-open"))) {
         $(".sidenav").removeClass("is-open");
         $(".sideul").removeClass("is-open");
         $(".hum1").removeClass("hum1r");
@@ -92,8 +91,7 @@ function init() {
         $("html").removeClass("notscr");
         }
     } else if (touchStartX < touchMoveX) {
-        if ((touchStartX + 50) < touchMoveX) {
-        //左から右に指が移動した場合
+        if ((touchStartX + 70) < touchMoveX) {
         $(".sidenav").addClass("is-open");
         $(".sideul").addClass("is-open");
         $(".hum1").addClass("hum1r");
