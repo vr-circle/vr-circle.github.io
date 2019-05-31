@@ -11,18 +11,10 @@
     <script async src="https://platform.twitter.com/widgets.js"></script>
 </head>
 
-<body>
-    <!--loading-->
-        <div id="loading">
-            <div id="loader-bg">
-                Now Loading...
-            </div>
-        </div>
-        <!--<script type="text/javascript" src="load.js"></script>-->
 <div class="main-contents">
     <!--header-->
         <div class="sp headersp">
-            <div class="spnav">
+            <div id="hum">
                 <div id="humbergerback">
                 <div id="humberger">
                     <div class="hum1"></div>
@@ -32,37 +24,67 @@
                 </div>
             </div>
             <a href="contact.html" class="spjoin"><div class="joinbtn"><span>Join</span>入部</div></a>
-            </div><ul class="headopen sp">
-                <li><a class="listsp" href="https://vr-circle.github.io/">
-                    <span>Home</span>ホーム</a></li>
-                <li><a class="listsp" href="about.html">
-                    <span>About</span>概要</a></li>
-                <li><a class="listsp" href="movie.html">
-                    <span>Products</span>制作物</a></li>
-                <li><a class="listsp" href="archive.html">
-                    <span>Archive</span>アーカイブ</a></li><!--
-                <li><a class="listsp" href="sitemap.html">
-                    <span>site map</span>サイトマップ</a></li>-->
-                <li><a class="listsp" href="contact.html">
-                    <span>Contact</span>お問い合わせ</a></li>
+        </div>
+        <nav class="sp sidenav">
+            <ul class="sideul">
+                
+                    <li class="sideli"><a class="listsp" href="https://vr-circle.github.io/">
+                        <span>Home</span>ホーム<div class="count_menu">●</div></a></li>
+                    <li class="sideli">
+                        <a class="listsp" href="about.html">
+                            <span>About</span>概要<div class="count_menu">●●</div>
+                        </a>
+                        <ul class="nav_2">
+                            <li class="n_2_list"><div class="line_connect"></div><a href="about.html"><span>about us</span>サークルについて</a></li>
+                            <li class="n_2_list"><div class="line_connect"></div><a href="about.html#member"><span>member</span>メンバー</a></li>
+                        </ul>
+                    </li>
+                    <li class="sideli" id=" product_side">
+                        <a class="listsp" href="product.html">
+                            <span>Products</span>制作物<div class="count_menu">●●●</div>
+                        </a>
+                        <ul class="nav_2">
+                            <li class="n_2_list"><div class="line_connect"></div><a href="product.html#modeling"><span>modeling</span>モデリング</a></li>
+                            <li class="n_2_list"><div class="line_connect"></div><a href="product.html#movie"><span>movie</span>動画</a></li>
+                            <li class="n_2_list"><div class="line_connect"></div><a href="product.html"><span></span>coming soon</a></li>
+                            <!--<li>coming soon...</li>-->
+                        </ul>
+                    </li>
+                    <li class="sideli"><a class="listsp" href="archive.html">
+                        <span>Archive</span>アーカイブ<div class="count_menu">●</div></a></li><!--
+                    <li class="sideli"><a class="listsp" href="sitemap.html">
+                        <span>site map</span>サイトマップ</a></li>-->
+                    <li class="sideli"><a class="listsp" href="contact.html">
+                        <span>Contact</span>問い合わせ<div class="count_menu">●</div></a></li>
             </ul>
-        
+        </nav>
     <header class="header pc">
-        <h2><a href="https://vr-circle.github.io/"><img class="headsvg" src="img/sample1.svg" height="" width="100px"></a><span class="headlogo">University of Hyogo</span></h2>
+        <h2><a href="https://vr-circle.github.io/"><img class="headsvg" src="img/sample1.svg" height="" width="100px"></a>
+            <span class="headlogo">University of Hyogo</span></h2>
         <nav>
             <ul>
                 <li><a class="list" href="https://vr-circle.github.io/">
                     <span>Home</span>ホーム</a></li>
-                <li><a class="list" href="about.html">
-                    <span>About</span>概要</a></li>
-                <li><a class="list" href="movie.html">
-                    <span>Products</span>制作物</a></li>
+                <li class="product_nav"><a class="list" href="about.html">
+                    <span>About</span>概要</a>
+                    <ul class="nav_2">
+                        <a href="about.html"><li class="list n_2_list"><span>About us</span>サークルについて</li></a>
+                        <a href="about.html#member"><li class="list n_2_list"><span>Member</span>メンバー</li></a>
+                    </ul>
+                </li>
+                <li class="product_nav"><a href="product.html" class="list">
+                    <span>Products</span>制作物</a>
+                    <ul class="nav_2">
+                        <a href="product.html#modeling"><li class="list n_2_list"><span>modeling</span>モデリング</li></a>
+                        <a href="product.html#movie"><li class="list n_2_list"><span>movie</span>動画</li></a>
+                    </ul>
+                </li>
                 <li><a class="list" href="archive.html">
                     <span>Archive</span>アーカイブ</a></li><!--
                 <li><a class="list" href="sitemap.html">
                     <span>site map</span>サイトマップ</a></li>-->
                 <li><a class="list" href="contact.html">
-                    <span>Contact</span>お問い合わせ</a></li>
+                    <span>Contact</span>問い合わせ</a></li>
             </ul>
         </nav>
     </header>
@@ -76,24 +98,29 @@
         <div class="headback4"></div>
                 <div class="contentsheadback"><div class="contentshead"><span>Products</span>制作物</div></div>
         </div>
-        <div class="background">
-        <div class="contentse">
-            <div class="manuf">
-                <h3>部員制作物</h3>
-                <h4>Model モデリング</h4>
-                <div class="styly"><h3>Styly</h3><ul>
-                    <li><a href="https://gallery.styly.cc/Alert/9c37b728-5461-11e9-b34d-4783bb2170d0"><img src="img/sty01.png" width="320" height="240"></a></li>
-                    <li><a href="https://gallery.styly.cc/Alert/c99bde97-3f1a-11e9-b34d-4783bb2170d0"><img src="img/sty02.png" width="320" height="240"></a></li>
-                </ul>
-            </div>
+        
+    
+    <div id="modeling"><h4><span>Model</span>モデリング</h4>
+        <div class="styly">Styly
+            <ul>
+                <li><a href="https://gallery.styly.cc/Alert/9c37b728-5461-11e9-b34d-4783bb2170d0">
+                    <img src="img/sty01.png"/></a>
+                </li>
+                <li><a href="https://gallery.styly.cc/Alert/c99bde97-3f1a-11e9-b34d-4783bb2170d0">
+                    <img src="img/sty02.png"/></a>
+                </li>
+            </ul>
+        </div>
             
             <div class="booth">Booth
                 <ul>
                     <li>
-                <a href="https://alert194.booth.pm/"><img src="img/booth01.png" width="320" height="240"></a></li>
+                        <a href="https://alert194.booth.pm/"><img src="img/booth01.png" width="320" height="240"></a>
+                    </li>
             </div>
-            <div class="skefab">Sketchfab<ul>
-                        <li><div class="sketchfab-embed-wrapper"><iframe width="320" height="240" src="https://sketchfab.com/models/b8befb43c8d145ee807b3a74331e10ca/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            <div class="skefab">Sketchfab
+                <ul>
+                        <li><div class="sketchfab-embed-wrapper"><iframe src="https://sketchfab.com/models/b8befb43c8d145ee807b3a74331e10ca/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
                             <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
                                 <a href="https://sketchfab.com/3d-models/donut-b8befb43c8d145ee807b3a74331e10ca?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Donut</a>
@@ -101,7 +128,7 @@
                                 on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
                             </p>
                             </div></li>
-                    <li><div class="sketchfab-embed-wrapper"><iframe width="320" height="240" src="https://sketchfab.com/models/49e749b81a8845f3840c4f443a78b264/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    <li><div class="sketchfab-embed-wrapper"><iframe src="https://sketchfab.com/models/49e749b81a8845f3840c4f443a78b264/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     
                         <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
                             <a href="https://sketchfab.com/3d-models/street-light-49e749b81a8845f3840c4f443a78b264?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Street light</a>
@@ -109,7 +136,7 @@
                             on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
                         </p>
                         </div></li>
-                    <li><div class="sketchfab-embed-wrapper"><iframe width="320" height="240" src="https://sketchfab.com/models/515f0c59c111495e95545fc553ba4897/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    <li><div class="sketchfab-embed-wrapper"><iframe  src="https://sketchfab.com/models/515f0c59c111495e95545fc553ba4897/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     
                         <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
                             <a href="https://sketchfab.com/3d-models/chair-515f0c59c111495e95545fc553ba4897?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">chair</a>
@@ -117,7 +144,7 @@
                             on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
                         </p>
                         </div></li>
-                    <li><div class="sketchfab-embed-wrapper"><iframe width="320" height="240" src="https://sketchfab.com/models/6587cb3cb59c4bd3bf7ddcdd86a3d08e/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    <li><div class="sketchfab-embed-wrapper"><iframe src="https://sketchfab.com/models/6587cb3cb59c4bd3bf7ddcdd86a3d08e/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     
                         <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
                             <a href="https://sketchfab.com/3d-models/gun-6587cb3cb59c4bd3bf7ddcdd86a3d08e?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Gun</a>
@@ -125,7 +152,7 @@
                             on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
                         </p>
                         </div></li>
-                    <li><div class="sketchfab-embed-wrapper"><iframe width="320" height="240" src="https://sketchfab.com/models/d9a4ba64ea2b4546969bbc3969f51b7d/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    <li><div class="sketchfab-embed-wrapper"><iframe src="https://sketchfab.com/models/d9a4ba64ea2b4546969bbc3969f51b7d/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     
                         <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
                             <a href="https://sketchfab.com/3d-models/hand-d9a4ba64ea2b4546969bbc3969f51b7d?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Hand</a>
@@ -133,7 +160,7 @@
                             on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
                         </p>
                         </div></li>
-                        <li><div class="sketchfab-embed-wrapper"><iframe width="320" height="240" src="https://sketchfab.com/models/7ea04aa13f964b9fa65e4f27a3bd72a2/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                        <li><div class="sketchfab-embed-wrapper"><iframe src="https://sketchfab.com/models/7ea04aa13f964b9fa65e4f27a3bd72a2/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
                             <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
                                 <a href="https://sketchfab.com/3d-models/tree-7ea04aa13f964b9fa65e4f27a3bd72a2?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Tree</a>
@@ -143,26 +170,31 @@
                             </div></li>
                 </ul>
             </div>
-            
-            <!--<div class="vhub">
-                VRoid hub
-                <ul>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>-->
         </div>
+        <div id="movie">
+            <h4><span>Movie</span>動画</h4>
+            <p>youtubeのチャンネルは<a href="https://www.youtube.com/channel/UCvkZAV-uqqXgwXMaPxe23lg?view_as=subscriber">こちら</a></p>
+            <ul>
+                <li>
+                    <a href=""><dt><img src="img/logo.png"/></dt><dd>新人歓迎会用紹介動画</dd></a>
+                </li>
+            </ul>
         </div>
+    </div>
 
     <!--scroll top button-->
     <div id="controlscroll" class="topscroll"><div class="mark">></div><div class="toptext pc">Page Top</div></div></div>
 
     <!--footer-->
-    <footer><a href="https://vr-circle.github.io/" class="vricon"><img src="img/sample1.svg" height="" width="140px"></a>
-        <div class="footimg">
-        <div class="fse pc">© 2019 VR_circle <!--University of Hyogo--></div>
-        <a href="https://twitter.com/vr_circle" class="twittericon"><img src="img/Twitter_Logo_Blue.png" height="60"></a>
-        <a href="https://www.youtube.com/channel/UCvkZAV-uqqXgwXMaPxe23lg?view_as=subscriber" class="youtubeicon"><img src="img/youtube_social_icon_red.png" height="30"></a>
+    <footer><a href="https://vr-circle.github.io/" class="vricon"><img class="footlogo" src="img/sample1.svg"></a>
+        <div class="footimg">        
+        <div class="cop">© 2019 VR_circle</div>
+        <a href="https://www.youtube.com/channel/UCvkZAV-uqqXgwXMaPxe23lg?view_as=subscriber" class="youtubeicon">
+            <img src="img/youtube_social_icon_red.png">
+        </a>
+        <a href="https://twitter.com/vr_circle" class="twittericon">
+            <img src="img/Twitter_Logo_Blue.png">
+        </a>
         </div>
     </footer>
 
@@ -172,3 +204,4 @@
 <script type="text/javascript" src="home.js"></script>
 </body>
 </html>
+
