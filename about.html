@@ -11,19 +11,10 @@
     <script async src="https://platform.twitter.com/widgets.js"></script>
 </head>
 
-<body>
-    <!--loading-->
-        <div id="loading">
-            <div id="loader-bg">
-                Now Loading...
-            </div>
-        </div>
-        <!--<script type="text/javascript" src="load.js"></script>-->
-    
 <div class="main-contents">
     <!--header-->
         <div class="sp headersp">
-            <div class="spnav">
+            <div id="hum">
                 <div id="humbergerback">
                 <div id="humberger">
                     <div class="hum1"></div>
@@ -33,71 +24,101 @@
                 </div>
             </div>
             <a href="contact.html" class="spjoin"><div class="joinbtn"><span>Join</span>入部</div></a>
-            </div><ul class="headopen sp">
-                <div class="backlist">
-                <li><a class="listsp" href="https://vr-circle.github.io/">
-                    <span>Home</span>ホーム</a></li>
-                <li><a class="listsp" href="about.html">
-                    <span>About</span>概要</a></li>
-                <li><a class="listsp" href="movie.html">
-                    <span>Products</span>制作物</a></li>
-                <li><a class="listsp" href="archive.html">
-                    <span>Archive</span>アーカイブ</a></li><!--
-                <li><a class="listsp" href="sitemap.html">
-                    <span>site map</span>サイトマップ</a></li>-->
-                <li><a class="listsp" href="contact.html">
-                    <span>Contact</span>お問い合わせ</a></li>
-                </div>
+        </div>
+        <nav class="sp sidenav">
+            <ul class="sideul">
+                
+                    <li class="sideli"><a class="listsp" href="https://vr-circle.github.io/">
+                        <span>Home</span>ホーム<div class="count_menu">●</div></a></li>
+                    <li class="sideli">
+                        <a class="listsp" href="about.html">
+                            <span>About</span>概要<div class="count_menu">●●</div>
+                        </a>
+                        <ul class="nav_2">
+                            <li class="n_2_list"><div class="line_connect"></div><a href="about.html"><span>about us</span>サークルについて</a></li>
+                            <li class="n_2_list"><div class="line_connect"></div><a href="about.html#member"><span>member</span>メンバー</a></li>
+                        </ul>
+                    </li>
+                    <li class="sideli" id=" product_side">
+                        <a class="listsp" href="product.html">
+                            <span>Products</span>制作物<div class="count_menu">●●●</div>
+                        </a>
+                        <ul class="nav_2">
+                            <li class="n_2_list"><div class="line_connect"></div><a href="product.html#modeling"><span>modeling</span>モデリング</a></li>
+                            <li class="n_2_list"><div class="line_connect"></div><a href="product.html#movie"><span>movie</span>動画</a></li>
+                            <li class="n_2_list"><div class="line_connect"></div><a href="product.html"><span></span>coming soon</a></li>
+                            <!--<li>coming soon...</li>-->
+                        </ul>
+                    </li>
+                    <li class="sideli"><a class="listsp" href="archive.html">
+                        <span>Archive</span>アーカイブ<div class="count_menu">●</div></a></li><!--
+                    <li class="sideli"><a class="listsp" href="sitemap.html">
+                        <span>site map</span>サイトマップ</a></li>-->
+                    <li class="sideli"><a class="listsp" href="contact.html">
+                        <span>Contact</span>問い合わせ<div class="count_menu">●</div></a></li>
             </ul>
-        
+        </nav>
     <header class="header pc">
-        <h2><a href="https://vr-circle.github.io/"><img class="headsvg" src="img/sample1.svg" height="" width="100px"></a><span class="headlogo">University of Hyogo</span></h2>
+        <h2><a href="https://vr-circle.github.io/"><img class="headsvg" src="img/sample1.svg" height="" width="100px"></a>
+            <span class="headlogo">University of Hyogo</span></h2>
         <nav>
             <ul>
                 <li><a class="list" href="https://vr-circle.github.io/">
                     <span>Home</span>ホーム</a></li>
-                <li><a class="list" href="about.html">
-                    <span>About</span>概要</a></li>
-                <li><a class="list" href="movie.html">
-                    <span>Products</span>制作物</a></li>
+                <li class="product_nav"><a class="list" href="about.html">
+                    <span>About</span>概要</a>
+                    <ul class="nav_2">
+                        <a href="about.html"><li class="list n_2_list"><span>About us</span>サークルについて</li></a>
+                        <a href="about.html#member"><li class="list n_2_list"><span>Member</span>メンバー</li></a>
+                    </ul>
+                </li>
+                <li class="product_nav"><a href="product.html" class="list">
+                    <span>Products</span>制作物</a>
+                    <ul class="nav_2">
+                        <a href="product.html#modeling"><li class="list n_2_list"><span>modeling</span>モデリング</li></a>
+                        <a href="product.html#movie"><li class="list n_2_list"><span>movie</span>動画</li></a>
+                    </ul>
+                </li>
                 <li><a class="list" href="archive.html">
                     <span>Archive</span>アーカイブ</a></li><!--
                 <li><a class="list" href="sitemap.html">
                     <span>site map</span>サイトマップ</a></li>-->
                 <li><a class="list" href="contact.html">
-                    <span>Contact</span>お問い合わせ</a></li>
+                    <span>Contact</span>問い合わせ</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
         <div class="space"></div>
-        <div class="headback">
-        <div class="headback1"></div>
-        <div class="headback2"></div>
-        <div class="headback3"></div>
-        <div class="headback4"></div>
-                <div class="contentsheadback"><div class="contentshead"><span>VR_circle</span><b>VRサークルについて</b></div></div>
-        </div>
-        <div class="background">
-        <div class="contentse">
+            <div class="headback">
+            <div class="headback1"></div>
+            <div class="headback2"></div>
+            <div class="headback3"></div>
+            <div class="headback4"></div>
+        <div class="contentshead"><span>VR_circle</span><b>VRサークルについて</b></div>
+            </div>
+            <div class="contentse">
+        <div id="about">
             <h2 class="slogan"><img src="img/sample1.svg" height="160px"><h2>VRの可能性</h2><p></p></h2>
             <h3>活動内容</h3>
             <ul>
-                <div class="abse"><b>基本的に各自が開発したいものを自由に開発しています</b>
-                <li>xＲ開発<p>Blender(右図 デバイスによってはみられません),Unity等を使った開発etc</p></li>
-                <li>週１回の会議<p>一週間の進捗、成果などの報告etc</p></li>
+                <div class="abse">
+                    <b>基本的に各自が開発したいものを自由に開発しています</b>
+
+                    <li>xＲ開発<p>Blender,Unity等を使った開発etc</p></li>
+                    <li>週１回の会議<p>一週間の進捗、成果などの報告etc</p></li>
                 </div>
             </ul>
-            <div class="devimg"><img src="img/cherry.png" class="ble" width="360px" height="240px"></div>
-            
-<!--<img src="img/unitydev.png" class="uni" width="360px" height="240px">-->
-<div class="member">
-            <h3>部員</h3>
-                <ul><li>工学部</li>
-                        <ol>
-                            <li>電気電子情報工学科　5名</li><!--
-                            <li>aa</li>
+        </div>
+
+<div id="member">
+    <!--<h3>顧問</h3>-->
+            <h3>部員</h3><!--現在公開可能な情報-->
+                <ul><li>工学部 13名</li>
+                        <!--<ol>
+                            <li>電気電子情報工学科　16名</li>
+                            <li>機械‣材料工学科      1名</li>
                             <li>aa</li>
                         </ol>
                     <li>--学部</li>
@@ -119,11 +140,15 @@
     <div id="controlscroll" class="topscroll"><div class="mark">></div><div class="toptext pc">Page Top</div></div></div>
 
     <!--footer-->
-    <footer><a href="https://vr-circle.github.io/" class="vricon"><img src="img/sample1.svg" height="" width="140px"></a>
-        <div class="footimg">
-        <div class="fse pc">© 2019 VR_circle <!--University of Hyogo--></div>
-        <a href="https://twitter.com/vr_circle" class="twittericon"><img src="img/Twitter_Logo_Blue.png" height="60"></a>
-        <a href="https://www.youtube.com/channel/UCvkZAV-uqqXgwXMaPxe23lg?view_as=subscriber" class="youtubeicon"><img src="img/youtube_social_icon_red.png" height="30"></a>
+    <footer><a href="https://vr-circle.github.io/" class="vricon"><img class="footlogo" src="img/sample1.svg"></a>
+        <div class="footimg">        
+        <div class="cop">© 2019 VR_circle</div>
+        <a href="https://www.youtube.com/channel/UCvkZAV-uqqXgwXMaPxe23lg?view_as=subscriber" class="youtubeicon">
+            <img src="img/youtube_social_icon_red.png">
+        </a>
+        <a href="https://twitter.com/vr_circle" class="twittericon">
+            <img src="img/Twitter_Logo_Blue.png">
+        </a>
         </div>
     </footer>
 
