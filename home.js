@@ -75,15 +75,13 @@ function init() {
     window.addEventListener("touchstart", function(event) {
     // 座標の取得
     touchStartX = event.touches[0].pageX;
-    touchStartY = event.touches[0].pageY;
     }, {passive:false});
     // 終了時
     window.addEventListener("touchend", function(event) {
         touchMoveX = event.changedTouches[0].pageX;
-        touchMoveY = event.changedTouches[0].pageY;
     // 移動量の判定
     if (touchStartX > touchMoveX) {
-        if ((touchStartX > (touchMoveX + 50)) && (touchStartY<(touchMoveY+20)) && (touchStartY>(touchMoveY-20)) && ($(".sidenav").hasClass("is-open"))) {
+        if ((touchStartX > (touchMoveX + 50)) && ($(".sidenav").hasClass("is-open"))) {
         //右から左に指が移動した場合
         $(".sidenav").removeClass("is-open");
         $(".sideul").removeClass("is-open");
@@ -94,7 +92,7 @@ function init() {
         $("html").removeClass("notscr");
         }
     } else if (touchStartX < touchMoveX) {
-        if (((touchStartX + 50) < touchMoveX) && ((touchStartY+20)>touchMoveY) && (touchMoveY>(touchStartY-20))) {
+        if (((touchStartX + 50) < touchMoveX) && (touchStartX<40) ) {
         //左から右に指が移動した場合
         $(".sidenav").addClass("is-open");
         $(".sideul").addClass("is-open");
