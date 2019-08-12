@@ -272,7 +272,7 @@ nav li span{
 }
 .twitterarea{
     display:inline-block;
-    /*float:left;*/
+    float:left;
     width:30%;
     height:340px;
     margin:0 3% 0% 3%;
