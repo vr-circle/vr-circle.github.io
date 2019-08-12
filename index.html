@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>VRcircle hyogo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="home.css" />
@@ -13,13 +13,7 @@
 
 
 <body>
-        <!--loading-
-        <div id="loading">
-            <div id="loader-bg">
-                Now Loading...
-            </div>
-        </div>
-        <script type="text/javascript" src="load.js"></script>-->
+        
 <div class="main-contents">
     <!--header-->
         <div class="sp headersp">
@@ -36,35 +30,48 @@
         </div>
         <nav class="sp sidenav">
             <ul class="sideul">
-                
-                    <li class="sideli"><a class="listsp" href="https://vr-circle.github.io/">
-                        <span>Home</span>ホーム<div class="count_menu">●</div></a></li>
+                <div class="main-nav">
                     <li class="sideli">
-                        <a class="listsp" href="about.html">
-                            <span>About</span>概要<div class="count_menu">●●</div>
-                        </a>
-                        <ul class="nav_2">
-                            <li class="n_2_list"><div class="line_connect"></div><a href="about.html"><span>about us</span>サークルについて</a></li>
-                            <li class="n_2_list"><div class="line_connect"></div><a href="about.html#member"><span>member</span>メンバー</a></li>
-                        </ul>
+                        <a><span>Home</span>ホーム</a>
                     </li>
-                    <li class="sideli" id=" product_side">
-                        <a class="listsp" href="product.html">
-                            <span>Products</span>制作物<div class="count_menu">●●●</div>
-                        </a>
-                        <ul class="nav_2">
-                            <li class="n_2_list"><div class="line_connect"></div><a href="product.html#modeling"><span>modeling</span>モデリング</a></li>
-                            <li class="n_2_list"><div class="line_connect"></div><a href="product.html#movie"><span>movie</span>動画</a></li>
-                            <li class="n_2_list"><div class="line_connect"></div><a href="product.html"><span></span>coming soon</a></li>
-                            <!--<li>coming soon...</li>-->
-                        </ul>
+                    <li class="sideli">
+                        <a><span>About</span>概要</a>
                     </li>
-                    <li class="sideli"><a class="listsp" href="archive.html">
-                        <span>Archive</span>アーカイブ<div class="count_menu">●</div></a></li><!--
-                    <li class="sideli"><a class="listsp" href="sitemap.html">
-                        <span>site map</span>サイトマップ</a></li>-->
-                    <li class="sideli"><a class="listsp" href="contact.html">
-                        <span>Contact</span>問い合わせ<div class="count_menu">●</div></a></li>
+                    <li class="sideli" id="product_side">
+                        <a><span>Products</span>制作物</a>
+                    </li>
+                    <li class="sideli">
+                        <a><span>Archive</span>アーカイブ</a>
+                    </li>
+                    <li class="sideli">
+                        <a><span>Contact</span>問い合わせ</a>
+                    </li>
+                    <!--<li class="sideli"><a class="listsp" href="sitemap.html"><span>site map</span>サイトマップ</a></li>-->
+                </div>
+                <div class="sub-nav">
+                    <ul class="subnav">
+                        <li class="topmenu"><a href="https://vr-circle.github.io/"><span>To home top</span>ホームトップへ</a></li>
+                        <li><a href="https://vr-circle.github.io/#latestNews"><span>Latest news</span>最近のニュース</a></li>
+                        <li><a href="https://vr-circle.github.io/#contact"><span>Contact</span>問い合わせ</a></li>
+                        <li><a href="https://vr-circle.github.io/#latestProducts"><span>Latest products</span>最近の制作物</a></li>
+                    </ul>
+                    <ul class="subnav">
+                        <li class="topmenu"><a href="about.html"><span>To about top</span>概要トップへ</a></li>
+                        <li><a href="about.html#aboutUs"><span>About us</span>サークルについて</a></li>
+                        <li><a href="about.html#member"><span>Member</span>メンバーについて</a></li>
+                    </ul>
+                    <ul class="subnav">
+                        <li class="topmenu"><a href="product.html"><span>To products top</span>制作物トップへ</a></li>
+                        <li><a href="product.html#modeling"><span>Modeling</span>モデリング</a></li>
+                        <li><a href="product.html#movie"><span>Movie</span>動画</a></li>
+                    </ul>
+                    <ul class="subnav">
+                        <li class="topmenu"><a href="archive.html"><span>To archive top</span>アーカイブトップへ</a></li>
+                    </ul>
+                    <ul class="subnav">
+                        <li class="topmenu"><a href="contact.html"><span>To contact top</span>問い合わせトップへ</a></li>
+                    </ul>
+                </div>
             </ul>
         </nav>
     <header class="header pc">
@@ -109,7 +116,7 @@
 
 <!--アーカイブ-->
         <div class="news">
-            <div class="newscontents">
+            <div class="newscontents" id="latestNews">
             <h2 class="contentshead"><span>Latest News</span>新着情報</h2>            
             <ul>
                 <li><!--
@@ -134,7 +141,7 @@
         </div>
 
 <!--お問い合わせ-->
-        <div class="contact">
+        <div class="contact" id="contact">
             <div class="contactcontents"><h2 class="contentshead"><span>Contact</span>お問い合わせ</h2>
                 <div class="twitterarea pc">
                     <a href="https://twitter.com/intent/tweet?screen_name=vr_circle&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @vr_circle</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -151,7 +158,7 @@
         </div>
 
 <!--制作物-->
-        <div class="news">
+        <div class="news" id="latestProducts">
             <div class="newscontents">
             <h2 class="contentshead"><span>Products</span>最近の制作物</h2>
                 <ul>
