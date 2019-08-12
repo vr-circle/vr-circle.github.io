@@ -42,7 +42,22 @@ function init() {
         
     },false);
 
-
+    //side navigation
+    var sideli=document.getElementsByClassName("sideli");
+    var subnav=document.getElementsByClassName("subnav");
+    for(var i=0;i<sideli.length;i++)
+        (function(n){
+            sideli[n].addEventListener('click',function(){
+                sideli[n].classList.toggle('sideli-click');
+                for(var si=0;si<sideli.length;si++)
+                    if(sideli[si].classList.contains('sideli-click') && !(si==n))
+                        sideli[si].classList.remove('sideli-click');
+                subnav[n].classList.toggle("visible");
+                for(var si=0;si<sideli.length;si++)
+                    if(subnav[si].classList.contains('visible') && !(si==n))
+                        subnav[si].classList.remove('visible');
+            },false);
+        })(i);
     
     var hum=document.getElementById('humbergerback');
     hum.addEventListener('click',function(ev){
@@ -66,20 +81,14 @@ function init() {
             $("html").addClass("notscr");
         }
     },false);
+
     var touchStartX;
-    var touchStartY;
     var touchMoveX;
-    var touchMoveY;
- 
-    // 開始時
     window.addEventListener("touchstart", function(event) {
-    // 座標の取得
     touchStartX = event.touches[0].pageX;
     }, {passive:false});
-    // 終了時
     window.addEventListener("touchend", function(event) {
         touchMoveX = event.changedTouches[0].pageX;
-    // 移動量の判定
     if (touchStartX > touchMoveX) {
         if ((touchStartX > (touchMoveX + 50)) && ($(".sidenav").hasClass("is-open"))) {
         //右から左に指が移動した場合
@@ -105,11 +114,12 @@ function init() {
     }
     }, false);
 
-    
-    var aa=document.getElementById('controlscroll');
-    aa.addEventListener('click',function(){
+
+    var scrollButton=document.getElementById('controlscroll');
+    scrollButton.addEventListener('click',function(){
         window.scrollTo(0,0);
     },false);
+
 }
 
 
