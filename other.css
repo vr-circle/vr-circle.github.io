@@ -715,6 +715,9 @@ footer{
     .sideli-click{
         background-color:rgb(193, 193, 255);
     }
+    .thispage{
+        background-color:rgba(138, 0, 202, 0.493);
+    }
     .nav_2{
         position:initial;
         margin:0;
