@@ -46,23 +46,11 @@ function init() {
     var urlstr=window.location.origin;
     var switchi;
     function checkPage(){
-        switch(urlstr){
-            case "https://vr-circle.github.io":
-                switchi=0;
-                break;
-            case "https://vr-circle.github.io/about.html":
-                switchi=1;
-                break;
-            case "https://vr-circle.github.io/product.html":
-                switchi=2;
-                break;
-            case "https://vr-circle.github.io/archive.html":
-                switchi=3;
-                break;
-            case "https://vr-circle.github.io/contact.html":
-                switchi=4;
-                break;
-        }
+        if(document.URL.match("about"))switchi=1;
+        else if(document.URL.match("product"))switchi=2;
+        else if(document.URL.match("archive"))switchi=3;
+        else if(document.URL.match("contact"))switchi=4;
+        else switchi=0;
     }
     var sideli=document.getElementsByClassName("sideli");
     var subnav=document.getElementsByClassName("subnav");
