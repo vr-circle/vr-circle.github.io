@@ -47,7 +47,7 @@ function init() {
     var switchi;
     function checkPage(){
         switch(urlstr){
-            case "https://vr-circle.github.io/":
+            case "https://vr-circle.github.io":
                 switchi=0;
                 break;
             case "https://vr-circle.github.io/about.html":
@@ -146,7 +146,7 @@ function init() {
     },false);
 
 
-    //alert(location.pathname);
+    alert(location.pathname);
 }
 
 
