@@ -43,7 +43,7 @@ function init() {
     },false);
 
     //side navigation
-    var urlstr=window.location.pathname;
+    var urlstr=window.location.origin;
     var switchi;
     function checkPage(){
         switch(urlstr){
@@ -146,7 +146,7 @@ function init() {
     },false);
 
 
-    alert(location.pathname);
+    //alert(location.pathname);
 }
 
 
