@@ -561,6 +561,9 @@ footer{
         background-color:rgb(193, 193, 255);
         border-radius:15px 0 0 0;
     }
+    .thispage{
+        background-color:rgba(138, 0, 202, 0.493);
+    }
     .sub-nav li{
         margin:0;
         padding:0;
