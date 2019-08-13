@@ -43,20 +43,45 @@ function init() {
     },false);
 
     //side navigation
+    var urlstr=window.location.pathname;
+    var switchi;
+    function checkPage(){
+        switch(urlstr){
+            case "https://vr-circle.github.io/":
+                switchi=0;
+                break;
+            case "https://vr-circle.github.io/about.html":
+                switchi=1;
+                break;
+            case "https://vr-circle.github.io/product.html":
+                switchi=2;
+                break;
+            case "https://vr-circle.github.io/archive.html":
+                switchi=3;
+                break;
+            case "https://vr-circle.github.io/contact.html":
+                switchi=4;
+                break;
+        }
+    }
     var sideli=document.getElementsByClassName("sideli");
     var subnav=document.getElementsByClassName("subnav");
     for(var i=0;i<sideli.length;i++)
         (function(n){
-            sideli[n].addEventListener('click',function(){
-                sideli[n].classList.toggle('sideli-click');
-                for(var si=0;si<sideli.length;si++)
-                    if(sideli[si].classList.contains('sideli-click') && !(si==n))
-                        sideli[si].classList.remove('sideli-click');
-                subnav[n].classList.toggle("visible");
-                for(var si=0;si<sideli.length;si++)
-                    if(subnav[si].classList.contains('visible') && !(si==n))
-                        subnav[si].classList.remove('visible');
-            },false);
+            checkPage();
+            if(switchi==n)sideli[n].classList.add('thispage');
+            else{
+                sideli[n].addEventListener('click',function(){
+                    sideli[n].classList.toggle('sideli-click');
+                    for(var si=0;si<sideli.length;si++)
+                        if(sideli[si].classList.contains('sideli-click') && !(si==n))
+                            sideli[si].classList.remove('sideli-click');
+                    subnav[n].classList.toggle("visible");
+                    for(var si=0;si<sideli.length;si++)
+                        if(subnav[si].classList.contains('visible') && !(si==n))
+                            subnav[si].classList.remove('visible');
+                },false);
+            }
         })(i);
     
     var hum=document.getElementById('humbergerback');
@@ -120,6 +145,8 @@ function init() {
         window.scrollTo(0,0);
     },false);
 
+
+    //alert(location.pathname);
 }
 
 
