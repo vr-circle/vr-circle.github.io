@@ -14,7 +14,7 @@
 
 <body>
         
-<div class="main-contents">
+<div class="main-contents point">
     <!--header-->
         <div class="sp headersp">
             <div id="hum">
@@ -50,10 +50,10 @@
                 </div>
                 <div class="sub-nav">
                     <ul class="subnav">
-                        <li class="topmenu"><a href="https://vr-circle.github.io/"><span>To home top</span>ホームトップへ</a></li>
-                        <li><a href="https://vr-circle.github.io/#latestNews"><span>Latest news</span>最近のニュース</a></li>
-                        <li><a href="https://vr-circle.github.io/#contact"><span>Contact</span>問い合わせ</a></li>
-                        <li><a href="https://vr-circle.github.io/#latestProducts"><span>Latest products</span>最近の制作物</a></li>
+                        <li class="topmenu subnavLi"><a><span>To home top</span>ホームトップへ</a></li>
+                        <li class="subnavLi"><a><span>Latest news</span>最近のニュース</a></li>
+                        <li class="subnavLi"><a><span>Contact</span>問い合わせ</a></li>
+                        <li class="subnavLi"><a><span>Latest products</span>最近の制作物</a></li>
                     </ul>
                     <ul class="subnav">
                         <li class="topmenu"><a href="about.html"><span>To about top</span>概要トップへ</a></li>
@@ -116,9 +116,13 @@
 
 <!--アーカイブ-->
         <div class="news">
-            <div class="newscontents" id="latestNews">
+            <div class="newscontents point" id="latestNews">
             <h2 class="contentshead"><span>Latest News</span>新着情報</h2>            
             <ul>
+                <li>
+                    <dt><img src="img/circleboothkai.png"></dt>
+                        <dd>2019/08/18<br>Virtual Market 出展</dd>
+                </li>
                 <li><!--
                  --><dt><img src="img/logo.png"></dt><!--
                     --><dd><!--説明の文-->2019/04/01<br>VRサークル,ホームページ完成</dd>
@@ -127,13 +131,9 @@
                  --><dt><img src="img/presen.png"></dt><!--
                     --><dd><!--説明の文-->2018/10/27<br>全国VRサークル活動報告大会2018出席</dd>
                 </li>
-                <li><!--
+                <li class="pc"><!--
                  --><dt><img src="img/logo.png"></dt><!--
                     --><dd><!--説明の文-->2018/05/30<br>VRサークル発足</dd>
-                </li>
-                <li class="invisible pc"><!--
-                 --><dt><img src="img/prepare.png"></dt><!--
-                    --><dd><!--説明の文-->nanikasira<br>exsample returnsentense</dd>
                 </li>
             </ul>
                 <div class="buttonback2"><a href="archive.html" class="button2">Read more</a></div>
@@ -141,7 +141,7 @@
         </div>
 
 <!--お問い合わせ-->
-        <div class="contact" id="contact">
+        <div class="contact point" id="contact">
             <div class="contactcontents"><h2 class="contentshead"><span>Contact</span>お問い合わせ</h2>
                 <div class="twitterarea pc">
                     <a href="https://twitter.com/intent/tweet?screen_name=vr_circle&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @vr_circle</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -158,7 +158,7 @@
         </div>
 
 <!--制作物-->
-        <div class="news" id="latestProducts">
+        <div class="news point" id="latestProducts">
             <div class="newscontents">
             <h2 class="contentshead"><span>Products</span>最近の制作物</h2>
                 <ul>
@@ -210,4 +210,3 @@
 
 </body>
 </html>
-
