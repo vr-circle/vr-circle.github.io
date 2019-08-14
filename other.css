@@ -849,6 +849,9 @@ footer{
         margin:5% 2% 0;
         padding:0;
     }
+    .archive .line2{
+        height:375px;
+    }
     .archive ul li{
         width:100%;
         height:25%;
