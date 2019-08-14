@@ -97,10 +97,16 @@ function init(){
     }, {passive:false});
     window.addEventListener("touchend", function(event) {
         touchMoveX = event.changedTouches[0].pageX;
-    if (touchStartX > touchMoveX)
-        if ((touchStartX > (touchMoveX + 50)) && ($(".sidenav").hasClass("is-open")))closeMenu();
-    else if (touchStartX < touchMoveX)
-        if (((touchStartX + 50) < touchMoveX) && (touchStartX<40))openMenu();
+    if (touchStartX > touchMoveX){
+        if ((touchStartX > (touchMoveX + 50)) && ($(".sidenav").hasClass("is-open"))){
+            closeMenu();
+        }
+    }
+    else if (touchStartX < touchMoveX){
+        if (((touchStartX + 50) < touchMoveX) && (touchStartX<40)){
+            openMenu();
+        }
+    }
     }, false);
 
     var scrollButton=document.getElementById('controlscroll');
