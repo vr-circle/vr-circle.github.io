@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>VRcircle hyogo - OneStarPeriod</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="../other.css" />
+    <link rel="icon" href="../img/profile.png" sizes="32x32" />
+    <link rel="icon" href="../img/profile.png" sizes="192x192" />
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/onestarperiod.json", {
+            onProgress: UnityProgress
+        });
+
+    </script>
+</head>
+
+
+<body>
+    <div class="main-contents point">
+        <!--header-->
+        <div class="sp headersp">
+            <div id="hum">
+                <div id="humbergerback">
+                    <div id="humberger">
+                        <div class="hum1"></div>
+                        <div class="hum2"></div>
+                        <div class="hum3"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="../contact.html" class="spjoin">
+                <div class="joinbtn"><span>Join</span>入部</div>
+            </a>
+        </div>
+        <nav class="sp sidenav">
+            <ul class="sideul">
+                <div class="main-nav">
+                    <li class="sideli">
+                        <a><span>Home</span>ホーム</a>
+                    </li>
+                    <li class="sideli">
+                        <a><span>About</span>概要</a>
+                    </li>
+                    <li class="sideli" id="product_side">
+                        <a><span>Products</span>制作物</a>
+                    </li>
+                    <li class="sideli">
+                        <a><span>Archive</span>アーカイブ</a>
+                    </li>
+                    <li class="sideli">
+                        <a><span>Contact</span>問い合わせ</a>
+                    </li>
+                    <!--<li class="sideli"><a class="listsp" href="sitemap.html"><span>site map</span>サイトマップ</a></li>-->
+                </div>
+                <div class="sub-nav">
+                    <ul class="subnav">
+                        <li class="topmenu subnavLi"><a><span>To home top</span>ホームトップへ</a></li>
+                        <li class="subnavLi"><a><span>Latest news</span>最近のニュース</a></li>
+                        <li class="subnavLi"><a><span>Contact</span>問い合わせ</a></li>
+                        <li class="subnavLi"><a><span>Latest products</span>最近の制作物</a></li>
+                    </ul>
+                    <ul class="subnav">
+                        <li class="topmenu"><a href="about.html"><span>To about top</span>概要トップへ</a></li>
+                        <li><a href="../about.html"><span>About us</span>サークルについて</a></li>
+                        <li><a href="../about.html#member"><span>Member</span>メンバーについて</a></li>
+                    </ul>
+                    <ul class="subnav">
+                        <li class="topmenu"><a href="../product.html"><span>To products top</span>制作物トップへ</a></li>
+                        <li><a href="../product.html#modeling"><span>Modeling</span>モデリング</a></li>
+                        <li><a href="../product.html#movie"><span>Movie</span>動画</a></li>
+                    </ul>
+                    <ul class="subnav">
+                        <li class="topmenu"><a href="../archive.html"><span>To archive top</span>アーカイブトップへ</a></li>
+                    </ul>
+                    <ul class="subnav">
+                        <li class="topmenu"><a href="../contact.html"><span>To contact top</span>問い合わせトップへ</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </nav>
+        <header class="header pc">
+            <h2><a href="https://vr-circle.github.io/"><img class="headsvg" src="../img/sample1.svg" height="" width="100px"></a>
+                <span class="headlogo">University of Hyogo</span></h2>
+            <nav>
+                <ul>
+                    <li><a class="list" href="https://vr-circle.github.io/">
+                            <span>Home</span>ホーム</a></li>
+                    <li class="product_nav"><a class="list" href="../about.html">
+                            <span>About</span>概要</a>
+                        <ul class="nav_2">
+                            <a href="../about.html">
+                                <li class="list n_2_list"><span>About us</span>サークルについて</li>
+                            </a>
+                            <a href="../about.html#member">
+                                <li class="list n_2_list"><span>Member</span>メンバー</li>
+                            </a>
+                        </ul>
+                    </li>
+                    <li class="product_nav"><a href="../product.html" class="list">
+                            <span>Products</span>制作物</a>
+                        <ul class="nav_2">
+                            <a href="../product.html#modeling">
+                                <li class="list n_2_list"><span>modeling</span>モデリング</li>
+                            </a>
+                            <a href="../product.html#movie">
+                                <li class="list n_2_list"><span>movie</span>動画</li>
+                            </a>
+                        </ul>
+                    </li>
+                    <li><a class="list" href="../archive.html">
+                            <span>Archive</span>アーカイブ</a></li>
+                    <!--
+                <li><a class="list" href="sitemap.html">
+                    <span>site map</span>サイトマップ</a></li>-->
+                    <li><a class="list" href="../contact.html">
+                            <span>Contact</span>問い合わせ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="space"></div>
+            <div class="headback">
+                <div class="headback1"></div>
+                <div class="headback2"></div>
+                <div class="headback3"></div>
+                <div class="headback4"></div>
+                <div class="contentsheadback">
+                    <div class="contentshead"><span>GameJam 2020</span></div>
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="contentse">
+                <h1>GameJam 2020 とは</h1>
+                <p>HiTech! の部員それぞれの技術を寄せ集めて 1 週間集中し， 1 つの作品を作り上げる企画です．</p>
+                <h3>開催時期</h3>
+                <p>2020-03-01 ~ 2020-03-07</p>
+                <h3>使用した技術</h3>
+                ・Unity(2018.4.17f1)<br>
+                ・音楽系<br>
+                ・絵描き系<br>
+                ・Git / <a href="https://github.com/vr-circle/OneStarPeriod">GitHub</a><br>
+                ・WebGL<br>
+                <p></p>
+                <h3>作品概要</h3>
+                <p>俯瞰視点シューティングゲーム</p>
+                <h2>作品</h2>
+                <h4>操作</h4>
+                <p>
+                    　W: 前進<br>
+                    　A: 左方向進<br>
+                    　S: 後進<br>
+                    　D: 右方向進<br>
+                    　左クリック: 弾発射(無限)<br>
+                    　右クリック: MP消費で魔法発動
+                </p>
+                <h4>UI</h4>
+                <p>
+                    　左下円形: 自キャラMP<br>
+                    　左下棒: 自キャHP<br>
+                    　左上: 残り敵数<br>
+                    　3rdステージの黄色いトゲトゲ: 体力回復(敵も取得可能)<br>
+                    　</p>
+                <h4>ステージ</h4>
+                <p>
+                    　1stステージ　操作を練習しよう！真ん中の魔法陣で戻れるぞ！<br>
+                    　2ndステージ　20体倒そう！<br>
+                    　3rdステージ　50体倒そう！<br>
+                    　 　　　　　黄色いトゲトゲ: 体力回復(敵も取得可能)<br>
+                    　 　　　　　一部敵/弾は触れたら即死
+                    　</p>
+                <h4>ゲーム</h4>
+                <p>PC かつモダンブラウザかつそこそこ大きな画面以外での動作保証はありません．<font color="red">音が出ます！</font>
+                </p>
+
+            </div>
+            <div class="webgl-content">
+                <div style="margin: 0 calc((100%-960px)/4)">
+                    <div id="gameContainer" style="width: 960px; height: 600px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <footer><a href="https://vr-circle.github.io/" class="vricon"><img class="footlogo" src="../img/sample1.svg"></a>
+            <div class="footimg">
+                <div class="cop">© 2020 VR_circle</div>
+                <a href="https://www.youtube.com/channel/UCvkZAV-uqqXgwXMaPxe23lg?view_as=subscriber" class="youtubeicon">
+                    <img src="../img/youtube_social_icon_red.png">
+                </a>
+                <a href="https://twitter.com/vr_circle" class="twittericon">
+                    <img src="../img/Twitter_Logo_Blue.png">
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
